@@ -1,0 +1,189 @@
+<!doctype html>
+<html dir="ltr" lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style_reponsivo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-cFg1R6Uwbv6U9VRifQFF4TC4TkSz+KNFvE+s3DnNjpzNlCsMBCegIvGT9X5wtF1fFR5iIwQbgd6vfGlHgfrJmQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>PetMundo</title>
+   </head>
+  <body>
+<div class="container">
+  <header>
+    <div class="logo">
+      <img src="img/logoPet.png" alt="logo_PetMundo" class="imagem_logo">
+    </div>
+    <div class="pesquisa">
+      <input type="text" class="formatacao_input" id="pesquisa_itens" >
+      <button type="submit" class="botao_pesquisa">Pesquisar</button>
+    </div>
+    <div class="navegacao">
+     <ul class="menu">
+      <li><a href="index.html">Menu</a></li>
+      <li><a href="#">Produtos</a></li>
+      <li><a href="#">Ofertas</a></li>
+      <li scroll-behavior="smooth"><a href="#footer">Contato</a></li>
+      </ul>
+    </div>
+    
+  </header>
+
+  
+  
+<section>
+  <div class="center">
+    <div class="slide">
+      <input type="radio" name="slid" id="imagem1" checked>
+      <input type="radio" name="slid" id="imagem2">
+      <input type="radio" name="slid" id="imagem3">
+      <input type="radio" name="slid" id="imagem4">
+      <input type="radio" name="slid" id="imagem5">
+
+      <div class="itens s1">
+          <img src="img/slide_grande1.jpg" alt="imagem_gato" >
+      </div>
+
+      <div class="itens">
+        <img src="img/slide_grande2.jpg" alt="imagem_cachorro_feliz" >
+      </div>
+
+      <div class="itens">
+        <img src="img/slide_grande3.jpg" alt="imagem_filhote" >
+      </div>
+
+      <div class="itens">
+        <img src="img/slide_grande4.jpg" alt="" >
+      </div>
+
+      <div class="itens">
+        <img src="img/slide_grande5.jpg" alt="imagem_cachorro" >
+      </div>
+
+    </div>
+
+    <div class="labels">
+      <label for="imagem1" class="labels_barra"></label>
+      <label for="imagem2" class="labels_barra"></label>
+      <label for="imagem3" class="labels_barra"></label>
+      <label for="imagem4" class="labels_barra"></label>
+      <label for="imagem5" class="labels_barra"></label>
+    </div>
+  </div>
+
+  </section>
+
+<article>
+  <h1>Ofertas de hoje</h1>
+    <div class="produtos_horizontal">
+      <div class="cards">
+        <h3>Oferta</h3>
+        <p>Produto</p>
+        <div class="imagens_produto">
+        </div>
+      </div>
+
+  
+      <div class="cards">
+        <h3>Oferta</h3>
+        <p>Produto</p>
+        <div class="imagens_produto">
+        </div>
+      </div>
+
+        <div class="cards">
+          <h3>Oferta</h3>
+          <p>Produto</p>
+          <div class="imagens_produto">
+        </div>
+        </div>
+
+        <div class="produtos_horizontal">
+          <div class="cards">
+            <h3>Oferta</h3>
+            <p>Produto</p>
+            <div class="imagens_produto">
+            </div>
+          </div>
+    
+      
+          <div class="cards">
+            <h3>Oferta</h3>
+            <p>Produto</p>
+            <div class="imagens_produto">
+            </div>
+          </div>
+    
+            <div class="cards">
+              <h3>Oferta</h3>
+              <p>Produto</p>
+              <div class="imagens_produto">
+              </div>
+            </div>
+    </div>
+  </div>
+
+  <h2>Nosso trabalho</h2>
+  <div class="central_trabalho">
+    <div class="texto_imagem">
+      <p>Bem-vindo à nossa loja veterinária! Nós fornecemos cuidados de saúde excepcionais para animais de estimação de todas as idades e tamanhos.</p>
+    </div>
+    <div class="imagem_texto">
+        <img src="img/veterinaria2.jpg" alt="veterinaria" >
+    </div>
+  </div>
+
+</article>
+
+<aside>
+  <h2>Agende um atendimento</h2>
+  <div class="formulario">
+    <label for="nome">Nome completo</label>
+    <input type="text" id="nome" placeholder="Digite o nome">
+    <label for="email">Email</label>
+    <input type="text" name="email" id="email" placeholder="digite o email">
+    <label for="telefone">Telefone</label>
+    <input type="text" name="phone" id="telefone" placeholder="digite o telefone">
+    <button type="submit">Enviar</button>
+  </div>
+</aside>
+<footer>
+    <div class="endereco_clinica">
+      <h5>Rua 157 bairro jardim alasca</h5>
+    </div>
+
+    <div class="email_clinica">
+      <p>clinicaanimal@123.com</p>
+    </div>
+
+    <div class="horario">
+      <p>+55 31 99999999</p>
+    </div>
+ </footer>
+  
+
+</div>
+
+
+<script>
+// seleciona o primeiro input
+var currentSlide = 1;
+document.getElementById('imagem' + currentSlide).checked = true;
+
+// muda de slide a cada 3 segundos
+setInterval(function() {
+  // aumenta o contador de slide
+  currentSlide++;
+
+  // se chegou ao último slide, volta para o primeiro
+  if (currentSlide > 5) {
+    currentSlide = 1;
+  }
+
+  // seleciona o input correspondente ao slide atual
+  document.getElementById('imagem' + currentSlide).checked = true;
+}, 5000);
+
+
+</script>
+</body>
+</html>
