@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style_reponsivo.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-cFg1R6Uwbv6U9VRifQFF4TC4TkSz+KNFvE+s3DnNjpzNlCsMBCegIvGT9X5wtF1fFR5iIwQbgd6vfGlHgfrJmQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>PetMundo</title>
    </head>
@@ -13,10 +14,7 @@
     <div class="logo">
       <img src="img/logoPet.png" alt="logo_PetMundo" class="imagem_logo">
     </div>
-    <div class="pesquisa">
-      <input type="text" class="formatacao_input" id="pesquisa_itens" >
-      <button type="submit" class="botao_pesquisa">Pesquisar</button>
-    </div>
+
     <div class="navegacao">
      <ul class="menu">
       <li><a href="index.html">Menu</a></li>
@@ -24,6 +22,22 @@
       <li><a href="#">Ofertas</a></li>
       <li scroll-behavior="smooth"><a href="#footer">Contato</a></li>
       </ul>
+    </div>
+
+    <input type="checkbox" name="" id="checado">
+    <label for="checado"><i class="fa fa-bars" id="abrir"></i></label>
+    <label for="checado"><i class="fa fa-close" id="fechar"></i></label>
+
+      <div class="sidebar">
+        <div class="cabecalho_sidebar">
+          <h1 class="sidebar_titulo">Categorias</h1>
+        </div>
+        <ul class="lista_sidebar">
+          <li><a href="index.html">Medicamentos</a></li>
+          <li><a href="index.html">Brinquedos</a></li>
+          <li><a href="index.html">Acessórios</a></li>
+          <li><a href="index.html">Nutrição</a></li>
+        </ul>
     </div>
     
   </header>
