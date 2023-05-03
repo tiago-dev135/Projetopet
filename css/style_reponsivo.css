@@ -1,5 +1,4 @@
-  /*Responsividade Atualizada*/
-
+  /*Mudança na opacidade do header background*/
   *{
     margin: 0px;
     padding:0px;
@@ -24,8 +23,11 @@
     display: flex;
     justify-content: space-around;
     width: 100%;
-    height: 150px;
+    height: 80px;
     position: fixed;
+    transition: 0.8s;
+    background-color: #333;
+    opacity: 0.6;
   }
   /*Inicio do sidebar*/
   .sidebar{
@@ -33,7 +35,7 @@
     height: 600px;
     width: 180px;
     opacity: 0.6;
-    background: #3c3c3c;
+    background: #1c1a1a;
     border-radius: 8px;
     position: absolute;
     right: -250px;
@@ -81,7 +83,7 @@
     top: 55px;
     left: 5px;
     font-size: 30px;
-    color: #1da1c2;
+    color: #ffffff;
     transition: 0.8s;
   }
   label #fechar{
@@ -161,7 +163,6 @@
     display: flex;
     justify-content: start;
     align-items: center;
-    display: none;
   }
   ul li a {
     display: block;
@@ -221,9 +222,8 @@
   /*div central*/
   
   .center{
-    width:80%;
+    width:100%;
     height: auto;
-    margin: 0px auto;
     overflow-x: hidden;
     overflow-y: hidden;
     border-radius: 12px;
@@ -447,7 +447,7 @@
   
   
   @media(max-width:600px){
-    .pesquisa{
+    .navegacao{
       display: none;
     }
     .labels{
@@ -460,7 +460,20 @@
       top:300px;
       left: 14%;
     }
-
+    label #abrir{
+      position: relative;
+      top: 32px;
+      left: 5px;
+      font-size: 30px;
+      color: #ffffff;
+      transition: 0.8s;
+    }
+    .center{
+      width: 100%;
+    }
+    .container{
+      overflow-x: hidden;
+    }
     .labels label{
       margin-right: 10px;
     }
@@ -469,13 +482,75 @@
       height: 400px;
     }
   }
+
+  @media(min-width:601px) and (max-width:768px){
+
+    .navegacao{
+      display: none;
+    }
+
+    .center{
+      width: 100%;
+    }
+
+    label #abrir{
+      position: relative;
+      top: 32px;
+      left: 5px;
+      font-size: 32px;
+      color: #ffffff;
+      transition: 0.8s;
+    }
+    .labels{
+      width: 600px;
+      height: 100px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      position: absolute;
+      top:600px;
+      left: 65px;
+    }
+  }
   
+  @media(min-width:769px) and (max-width:992px){
+    #abrir{
+      display: none;
+    }
+
+    .center{
+      width: 100%;
+    }
   
+  .labels{
+    width: 600px;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top:600px;
+    left: 14%;
+  }
+  }
   
-  
-  
-  
-  
-  
-  
+  @media(width > 993px){
+    #abrir, #fechar,#checado{
+      display: none;
+    }
+
+    .sidebar{
+      display: none;
+    }
+
+    header{
+      display: flex;
+      justify-content: space-around;
+    }
+    
+    header label{
+      display: none;
+      
+    }
+  }
   
