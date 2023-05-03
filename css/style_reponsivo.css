@@ -26,16 +26,15 @@
     height: 80px;
     position: fixed;
     transition: 0.8s;
-    background-color: #333;
-    opacity: 0.6;
+    background-color: rgba(64, 62, 62, 0.5);
+   
   }
   /*Inicio do sidebar*/
   .sidebar{
     display: block;
     height: 600px;
     width: 180px;
-    opacity: 0.6;
-    background: #1c1a1a;
+    background-color: rgba(64, 62, 62, 0.5);
     border-radius: 8px;
     position: absolute;
     right: -250px;
@@ -53,6 +52,29 @@
     margin-left: 12px;
     color: #fff;
   }
+
+  
+  .sidebar ul li a {
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #0056b3;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: none;
+    transition: 1s;
+    }
+
+
+   .sidebar ul li a:hover {
+      background-color:#5b93ce;
+      text-decoration: underline;
+      color: #fffefe;
+      transition: 0.1s;
+    }
+
+
   .lista_sidebar{
     display: block;
     height: 80%;
@@ -63,7 +85,7 @@
     width: 20px;
     transition: 0.8s;
   }
-
+  
   .lista_sidebar li:hover{
     width: 120px;
     transition: 0.8s;
@@ -164,6 +186,7 @@
     justify-content: start;
     align-items: center;
   }
+
   ul li a {
     display: block;
     padding: 10px;
@@ -178,9 +201,9 @@
   }
   
   ul li a:hover {
-    background-color: #54b9d2;
+    background-color:rgba(64, 62, 62, 0.5);
     text-decoration: underline;
-    color: #fff;
+    color: #fffefe;
     transition: 0.1s;
   }
   
@@ -493,6 +516,10 @@
       width: 100%;
     }
 
+    .container{
+      overflow-x: hidden;
+    }
+
     label #abrir{
       position: relative;
       top: 32px;
@@ -520,6 +547,10 @@
 
     .center{
       width: 100%;
+    }
+
+    .container{
+      overflow-x: hidden;
     }
   
   .labels{
@@ -551,6 +582,10 @@
     header label{
       display: none;
       
+    }
+
+    .container{
+      overflow-x: hidden;
     }
   }
   
