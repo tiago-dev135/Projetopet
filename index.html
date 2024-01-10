@@ -22,11 +22,19 @@
       <li><a href="#">Ofertas</a></li>
       <li scroll-behavior="smooth"><a href="#footer">Contato</a></li>
       <li><a href="index.html"><i class="fa fa-shopping-basket"></i></a></li>
-      <li><a href="index.html"><i class="fa fa-user-circle"></i>Login</a></li>
+      <!--Label do formulário-->
+      
+        <label for="abrir_formulario">
+          <i class="fa fa-user-circle">Login</i>
+            
+        </label>
+        
+
       </ul>
     </div>
 
-    <input type="checkbox" name="" id="checado">
+
+    <input type="checkbox" name="" id="checado" >
     <label for="checado"><i class="fa fa-bars" id="abrir"></i></label>
     <label for="checado"><i class="fa fa-close" id="fechar"></i></label>
 
@@ -46,6 +54,54 @@
     </div>
     
   </header>
+
+
+
+
+  
+
+  <input type="radio" name="radio" id="abrir_formulario" >
+  <input type="radio" name="radio" id="fechar_formulario">
+
+  
+
+  <div id="formulario_login" class="formulario_login">
+    <label for="fechar_formulario" class="fechar_formulario">X</label>
+    <form action="#">
+      <div class="nome">
+        <label for="nome">
+          Nome
+        </label>
+        <input type="text" name="nome" placeholder="Digite o seu nome">
+      </div>
+
+      <div class="contato">
+
+        <label for="contato">
+          Contato
+        </label>
+        <input type="text" placeholder="Digite o seu contato">
+      </div>
+
+      <div class="email">
+        <label for="Email">
+        Email
+        </label> 
+        <input type="text" name="Email" placeholder="Digite o seu email">
+      </div>
+
+      <div class="senha">
+        <label for="senha">
+          Senha
+        </label> 
+        <input type="password" name="senha" placeholder="Confirme sua senha">
+      </div>  
+
+      <div class="enviar">
+        <button type="submit">Enviar</button>
+      </div>
+    </form>
+  </div>
 
   
   
@@ -185,26 +241,7 @@
 </div>
 
 
-<script>
-// seleciona o primeiro input
-var currentSlide = 1;
-document.getElementById('imagem' + currentSlide).checked = true;
-
-// muda de slide a cada 3 segundos
-setInterval(function() {
-  // aumenta o contador de slide
-  currentSlide++;
-
-  // se chegou ao último slide, volta para o primeiro
-  if (currentSlide > 5) {
-    currentSlide = 1;
-  }
-
-  // seleciona o input correspondente ao slide atual
-  document.getElementById('imagem' + currentSlide).checked = true;
-}, 5000);
-
-
+<script src="js/javascript.js">
 </script>
 </body>
 </html>
