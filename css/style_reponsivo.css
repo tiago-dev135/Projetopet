@@ -218,6 +218,7 @@
   /*Formulário de login inicio*/
   .formulario_login{
     position: absolute;
+    position: fixed;
     left: -40%;
     top: 250px;
     max-width: 500px;
@@ -326,6 +327,7 @@ colocar o botão de fechar junto formulário*/
   display: none;
 
 }
+/*Fim de formulário login*/
 
 
 
@@ -617,6 +619,7 @@ colocar o botão de fechar junto formulário*/
       width: 100%;
       height: 400px;
     }
+    
     
   }
 
