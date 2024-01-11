@@ -217,24 +217,24 @@
 
   /*Formulário de login inicio*/
   .formulario_login{
-    margin: 0px auto;
-    align-items: center;
-    width: 250px;
-    height: auto;
+    position: absolute;
+    left: -40%;
+    top: 250px;
+    max-width: 500px;
+    height: 300px;
+    margin: 0 auto;
     text-align: center;
     padding: 20px;
-    background-color: #ede7e7;
+    background-color: #efeaea;
     border-radius: 5px;
-    position: absolute;
-    position: fixed;
-    left:-40%;
-    top:250px;
-    transition: 0.8s ease-in-out;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     opacity: 0;
+    transition:1s ease-in-out;
   }
   .nome,.contato, .email, .senha{
     width: 100%;
     height: auto;
+
     margin: 20px;
     text-align: start;
     align-items: center;
@@ -243,32 +243,36 @@
   }
 
 
-
-
-#formulario_login button{
-  padding: 10px;
-    margin-left: 10px;
-    border-radius: 5px;
-    font-size: 16px;
-    background-color: #1da1c2;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    border: none;
-    transition: 1s;
-}
-
-#formulario_login button:hover{
-  background-color:#57c1dc;
-    text-decoration: underline;
-    color: #fffefe;
-    transition: 0.1s;
-}
-
-#formulario input{
+.formulario_login input{
+  width:200px;
+  padding: 5px;
+  margin-bottom: 10px;
   border: none;
-  border-radius: 1px;
-  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
 }
+
+.formulario_login button{
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.formulario_login button:hover{
+  background-color: #1da1c2;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  border: none;
+    transition: 0.1s;
+
+}
+
 
 
 .menu label{
@@ -282,7 +286,6 @@
   text-decoration: none;
   border: none;
   cursor: pointer;
-  transition: 1s;
 }
 
 
@@ -291,7 +294,6 @@
   background-color:rgba(64, 62, 62, 0.5);
     text-decoration: underline;
     color: #fffefe;
-    transition: 0.1s;
 
 }
 
@@ -299,7 +301,7 @@
 .fechar_formulario{
   position: absolute;
   top: 0%;
-  left:90%;
+  left:93%;
   font-weight: 900;
   font-size: 30px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -314,12 +316,10 @@
 /*Lógica do formulário*/
 /*Quando o marcar estiver ativo vai abrir o formulário,
 colocar o botão de fechar junto formulário*/
-
-
-
 #abrir_formulario:checked ~ .formulario_login{
   left: 40%;
   opacity: 1;
+  transition:1s ease-in-out;
 }
 
 #abrir_formulario, #fechar_formulario{
