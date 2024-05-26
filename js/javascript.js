@@ -17,5 +17,17 @@ setInterval(function() {
   document.getElementById('imagem' + currentSlide).checked = true;
 }, 5000);
 
+//Lógica do Dropdown
 
+function activeDropDown(){
+  let ativarClasse = document.getElementById("listDropdown")
+  if (ativarClasse.classList.contains("activeDropdown")) {
+    ativarClasse.classList.remove("activeDropdown")
+    ativarClasse.classList.add("noneDropdown")
+  }
+  else{
+    ativarClasse.classList.remove("noneDropdown")
+    ativarClasse.classList.add("activeDropdown")
+  }
+}
 

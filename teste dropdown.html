@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    button{
+      background: rgba(10, 101, 176, 0.925);
+      color: aliceblue;
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+      transition: 1s;
+      cursor: pointer;
+    }
+
+    button:hover{
+      background: rgb(67, 138, 200);
+      color: aliceblue;
+      transition: 1s;
+    }
+
+    .none{
+      display:none;
+    }
+    .active{
+      height: auto;
+      border-radius: 10px;
+      display: flex;
+      justify-content: start;
+    }
+
+
+    li{
+      background: rgba(10, 101, 176, 0.925);
+      color: aliceblue;
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+      list-style: none;
+      transition: 1s;
+      width: 90px;
+      cursor: pointer;
+    }
+    li:hover{
+      background: rgb(67, 138, 200);
+      color: aliceblue;
+      transition: 1s;
+    }
+  </style>
+</head>
+<body>
+  <div class="dropdown">
+    <button onclick="ativarDropdown()" id="botaoDropdown">Dropdown</button>
+    <ul id="dropdown" class="none">
+      <li>Brinquedos pet</li>
+      <li>Derma</li>
+      <li>Alimentação</li>
+    </ul>
+  </div>
+  <script>
+  function ativarDropdown() {
+            let botaoDropdown = document.getElementById("dropdown");
+            if (botaoDropdown.classList.contains("active")) {
+                botaoDropdown.classList.remove("active");
+                botaoDropdown.classList.add("none");
+            } else {
+                botaoDropdown.classList.remove("none");
+                botaoDropdown.classList.add("active");
+            }
+        }
+
+        // Função para verificar se o clique foi fora do dropdown
+        document.addEventListener('click', function(event) {
+            let botaoDropdown = document.getElementById("dropdown");
+            let botao = document.querySelector('button');
+            if (!botaoDropdown.contains(event.target) && !botao.contains(event.target)) {
+                botaoDropdown.classList.remove("active");
+                botaoDropdown.classList.add("none");
+            }
+        });
+  </script>
+</body>
+</html>

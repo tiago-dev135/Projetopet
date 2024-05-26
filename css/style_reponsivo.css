@@ -83,10 +83,7 @@
     width: auto;
     transition: 0.8s;
   }
-  .lista_sidebar li:hover{
-    background: ;
-  }
-
+  
   /*Icones do sidebar*/
   #checado{
     display: none;
@@ -214,19 +211,128 @@
     display: none;
     margin-left: -50px;
   }
+  /*Menu dropdown inicio*/
+  .containerDropdown{
+    display: block;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #1da1c2;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: none;
+    transition: 1s;
+  }
+  .containerDropdown:hover{
+    background-color:rgba(64, 62, 62, 0.5);
+    text-decoration: underline;
+    color: #fffefe;
+    transition: 0.1s;
+  }
+  .btnDropdown{
+    width: 100%;
+    color: #fff;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .noneDropdown{
+    display: none;
+    transition: 1s;
+  }
+
+
+  .activeDropdown{
+    display: block;
+    position: absolute;
+    transition: 1s;
+  }
+  .dropdownItens{
+    position: relative;
+    right: 49px;
+    top: 15px;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #1da1c2;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    transition: 1s;
+  }
+
+  .dropdownItens:hover{
+    background-color:rgba(64, 62, 62, 0.5);
+    text-decoration: underline;
+    color: #fffefe;
+    transition: 0.1s;
+  }
+  /*Menu dropdown fim*/
+
+  /*Barra de pesquisa*/
+  .search{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .search input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.search input:focus {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+}
+
+.search input::placeholder {
+    color: #adb5bd;
+}
+  .search button{
+    border-radius: 5px ;
+    padding: 12px;
+    border: 1px solid  #0e677e ;
+    width: 70px;
+    background-color: #1da1c2;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: 1s;
+  }
+
+  .search button:hover{
+    background:rgba(64, 62, 62, 0.5);
+    text-decoration: underline;
+    color: #fffefe;
+    transition: 0.1s;
+    cursor: pointer;
+  }
 
   /*Formulário de login inicio*/
   .formulario_login{
     position: absolute;
     position: fixed;
     left: -40%;
-    top: 250px;
+    top: 200px;
     max-width: 500px;
-    height: 300px;
+    height: auto;
     margin: 0 auto;
     text-align: center;
     padding: 20px;
-    background-color: #efeaea;
+    background-color: #efeaeacf;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     opacity: 0;
@@ -272,6 +378,9 @@
   border: none;
     transition: 0.1s;
 
+}
+.formulario_login form{
+  text-align: center;
 }
 
 
