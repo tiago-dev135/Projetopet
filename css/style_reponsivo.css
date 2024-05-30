@@ -131,43 +131,7 @@
     width: 200px;
   }
   
-  .pesquisa{
-    width: 600px;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    display: none;
-  }
-  .formatacao_input {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 400px;
-    font-size: 16px;
-  }
-  
-  /* estilo do botão de pesquisa */
-  .botao_pesquisa {
-    background: #1da1c2;
-    color: white;
-    padding: 8px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    display: none;
-  }
-  
-  .botao_pesquisa:hover{
-    background-color: #54b9d2;
-    text-decoration: underline;
-    color: #fff;
-    transition: 0.1s;
-  }
-  /* estilo do botão de pesquisa ao passar o mouse */
+
   ul {
     list-style: none;
     margin:20px;
@@ -301,6 +265,11 @@
 
 .search input::placeholder {
     color: #adb5bd;
+}
+
+.search input:hover{
+  width: -2px;
+  transition: 1s;
 }
   .search button{
     border-radius: 5px ;
@@ -602,22 +571,20 @@ colocar o botão de fechar junto formulário*/
     width: 100%;
     height: auto;
     margin: 50px auto;
+    box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    border:1px solid #54b9d2;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    background: rgba(72, 114, 238, 0.26);
   }
   .texto_imagem{
-    width: 50%;
     font-family: Arial, sans-serif;
-        font-size: 20px;
-        line-height: 1.5;
-        color: #333333;
-        margin-bottom: 20px;
-  }
-  
-  .texto_imagem p {
-    margin: 20px;
+    font-size: 20px;
+    color: #646161f3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    /* Centraliza os itens horizontalmente */
+    justify-content: center;
   }
   .imagem_texto{
     width: 50%;
@@ -626,6 +593,8 @@ colocar o botão de fechar junto formulário*/
   
   .imagem_texto img{
     width: 100%;
+    border-radius: 50%;
+    
   }
   .formulario {
     max-width: 500px;
@@ -728,7 +697,9 @@ colocar o botão de fechar junto formulário*/
       width: 100%;
       height: 400px;
     }
-    
+    .search{
+      display: none;
+    }
     
   }
 
@@ -764,6 +735,10 @@ colocar o botão de fechar junto formulário*/
       top:600px;
       left: 65px;
     }
+    .search{
+      display: none;
+    }
+    
 
     
   }
@@ -791,6 +766,10 @@ colocar o botão de fechar junto formulário*/
     top:600px;
     left: 14%;
   }
+  .search{
+    display: none;
+  }
+  
   }
   
   @media(width > 993px){
