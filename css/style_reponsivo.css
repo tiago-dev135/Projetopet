@@ -672,11 +672,13 @@ colocar o botão de fechar junto formulário*/
       position: absolute;
       top:300px;
       left: 14%;
+      cursor: pointer;
     }
     .labels label{
       width: 10px;
       height: 10px;
       border-radius: 50%;
+      cursor: pointer;
     }
     label #abrir{
       position: relative;
@@ -685,6 +687,10 @@ colocar o botão de fechar junto formulário*/
       font-size: 30px;
       color: #ffffff;
       transition: 0.8s;
+      cursor: pointer;
+    }
+    #fechar{
+      cursor: pointer;
     }
     .center{
       width: 100%;
@@ -724,6 +730,10 @@ colocar o botão de fechar junto formulário*/
       font-size: 32px;
       color: #ffffff;
       transition: 0.8s;
+      cursor: pointer;
+    }
+    #fechar{
+      cursor: pointer;
     }
     .labels{
       width: 600px;
@@ -734,10 +744,12 @@ colocar o botão de fechar junto formulário*/
       position: absolute;
       top:600px;
       left: 65px;
+      cursor: pointer;
     }
     .search{
       display: none;
     }
+
     
 
     
@@ -746,6 +758,10 @@ colocar o botão de fechar junto formulário*/
   @media(min-width:769px) and (max-width:992px){
     #abrir{
       display: none;
+      cursor: pointer;
+    }
+    #fechar{
+      cursor: pointer;
     }
 
     .center{
@@ -765,6 +781,7 @@ colocar o botão de fechar junto formulário*/
     position: absolute;
     top:600px;
     left: 14%;
+    cursor: pointer;
   }
   .search{
     display: none;
