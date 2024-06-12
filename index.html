@@ -5,6 +5,8 @@
     <link rel="stylesheet" href="css/style_reponsivo.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Biblioteca sweet alert-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     
     <title>PetMundo</title>
    </head>
@@ -79,34 +81,33 @@
   <input type="radio" name="radio" id="abrir_formulario" >
   <input type="radio" name="radio" id="fechar_formulario">
 
-  
+  <!--Formulário-->
 
   <div id="formulario_login" class="formulario_login">
     <label for="fechar_formulario" class="fechar_formulario">X</label>
-    <form action="#">
+    <form id="loginForm" action="#">
       <div class="nome">
         <label for="nome">
-          Nome
+          teste
         </label>
         <br>
-        <input type="text" name="nome" placeholder="Digite o seu nome">
+        <input type="text" name="nome" placeholder="Digite o seu nome" required>
       </div>
 
       <div class="contato">
-
         <label for="contato">
           Contato
         </label>
         <br>
-        <input type="text" placeholder="Digite o seu contato">
+        <input type="text" name="contato" placeholder="Digite o seu contato" required>
       </div>
 
       <div class="email">
         <label for="Email">
-        Email
+          Email
         </label> 
         <br>
-        <input type="text" name="Email" placeholder="Digite o seu email">
+        <input type="text" name="Email" placeholder="Digite o seu email" required>
       </div>
 
       <div class="senha">
@@ -114,14 +115,15 @@
           Senha
         </label> 
         <br>
-        <input type="password" name="senha" placeholder="Confirme sua senha">
+        <input type="password" name="senha" placeholder="Digite sua senha">
       </div>  
 
       <div class="enviar">
-        <button type="submit">Cria uma conta</button>
+        <button type="submit" onclick="validateForm()">Criar uma conta</button>
       </div>
     </form>
   </div>
+
 
   
   
