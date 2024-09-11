@@ -587,11 +587,6 @@ colocar o botão de fechar junto formulário*/
   background: white;
   }
   /*Serviços inicio */
-  *{
-    margin:0;
-    padding:0;
-  }
-  
   .servicos{
     display:flex;
     justify-content:space-around;
@@ -601,7 +596,7 @@ colocar o botão de fechar junto formulário*/
   .card {
     width: 300px;
     margin: 50px auto;
-    border: 2px solid black; /* Bordas com espessura ajustada */
+    border: 2px solid  #1da1c2; /* Bordas com espessura ajustada */
     border-radius: 10px;
     padding: 15px;
     background: aliceblue;
