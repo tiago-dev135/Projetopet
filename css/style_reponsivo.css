@@ -603,7 +603,7 @@ colocar o botão de fechar junto formulário*/
     height: 300px;
   
     /* Adicionando sombra */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    box-shadow: #1fc5ee, #1da1c2;
   
     /* Transição suave para hover */
     transition: transform 0.3s ease;
