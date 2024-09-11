@@ -586,7 +586,64 @@ colocar o botão de fechar junto formulário*/
   .cards:hover > h3{
   background: white;
   }
+  /*Serviços inicio */
+  *{
+    margin:0;
+    padding:0;
+  }
   
+  .servicos{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+  }
+  
+  .card {
+    width: 300px;
+    margin: 50px auto;
+    border: 2px solid black; /* Bordas com espessura ajustada */
+    border-radius: 10px;
+    padding: 15px;
+    background: aliceblue;
+    height: 300px;
+  
+    /* Adicionando sombra */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+  
+    /* Transição suave para hover */
+    transition: transform 0.3s ease;
+    opacity:0.8;
+  }
+  
+  .card:hover {
+    /* Escala de 1.05 ao passar o mouse, ligeiro crescimento */
+    transform: scale(1.05);
+    opacity:1;
+    transition:0.5s;
+  }
+  
+  .tittle{
+    height:20%;
+    color:black;
+    display:flex;
+    justify-content:center;
+    text-align:center;
+    font-family: 'Arial', sans-serif;
+  font-size: 20px;
+  }
+  .card-boximg{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    height:auto;
+  }
+  .card-img{
+    width:auto;
+    border-radius:5px;
+    height:150px;
+  }
+  
+  /*serviços fim*/
   
   .central_trabalho {
     width: 100%;
