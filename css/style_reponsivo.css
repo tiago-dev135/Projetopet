@@ -50,6 +50,7 @@
     position: fixed;
     transition: 0.8s;
     background-color: rgba(64, 62, 62, 0.5);
+    z-index: 100;
    
   }
   /*Inicio do sidebar*/
@@ -437,7 +438,8 @@ colocar o botão de fechar junto formulário*/
     color: #1da1c2;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 50px;
-    margin:100px;
+    margin-top:100px;
+    margin-bottom: 50px;
   }
   
   
@@ -559,6 +561,93 @@ colocar o botão de fechar junto formulário*/
     font-style: normal;
     color: #1da1c2;
 }
+
+
+.categoria-vantagens {
+  width: 80%;
+  height: 50px;
+  margin: 50px auto;
+  background: #f4f4f4;
+  display: flex;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.categoria-vantagens div {
+  flex: 1; /* já divide igualmente */
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  transition: background 0.3s, color 0.3s;
+}
+
+.categoria-vantagens div:hover {
+  background: #ddd;
+}
+
+.ativo {
+  background: #00a8ff;
+  color: #fff;
+}
+
+.vantagens-descricao {
+  width: 80%;
+  height: 300px;
+  margin: 20px auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.descricao {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.descricao img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.descricao::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0));
+  z-index: 1;
+}
+
+.descricao span {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  z-index: 2;
+  animation: fadeIn 0.6s ease;
+}
+
+/* Efeito suave no texto */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
   .container-produtos{
   display:flex;
   justify-content:space-around;
