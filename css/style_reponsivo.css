@@ -743,7 +743,7 @@ colocar o botão de fechar junto formulário*/
 
     section.servicos {
         padding: 50px 10%;
-        background: rgba(64, 62, 62, 0.5);
+        background: #f1f1f1;
         color: #1da1c2;
         text-align: center;
     }
@@ -802,6 +802,9 @@ colocar o botão de fechar junto formulário*/
         font-size: 0.95rem;
         line-height: 1.4;
     }
+    /*fim serviço*/
+
+    /*Inicio formulário de contato*/
   .formulario {
     max-width: 500px;
     height: 300px;
