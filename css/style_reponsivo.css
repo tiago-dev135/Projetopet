@@ -739,30 +739,12 @@ colocar o botão de fechar junto formulário*/
       background: #32004a;
     }
   /*Serviços inicio */
-  .servicos{
-    display:flex;
-    justify-content:space-around;
-    flex-wrap:wrap;
-  }
   
-  
-  /*serviços fim*/
-  
-  * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: Arial, sans-serif;
-    }
-
-    body {
-        background: #f2f5f7;
-    }
 
     section.servicos {
         padding: 50px 10%;
-        background: rgba(6, 37, 66, 0.5);
-        color: white;
+        background: rgba(64, 62, 62, 0.5);
+        color: #1da1c2;
         text-align: center;
     }
 
