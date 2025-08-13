@@ -433,7 +433,7 @@ colocar o botão de fechar junto formulário*/
 
 
 
-  h1,h2{
+  h1{
     text-align: center;
     color: #1da1c2;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -748,38 +748,78 @@ colocar o botão de fechar junto formulário*/
   
   /*serviços fim*/
   
-  .central_trabalho {
-    width: 100%;
-    height: auto;
-    margin: 50px auto;
-    box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    background: linear-gradient(165deg, rgba(88, 129, 183, 1) 50%, rgba(107, 141, 184, 1) 50%);
-  }
+  * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
 
- 
-  .texto_imagem{
-    font-family: Arial, sans-serif;
-    font-size: 20px;
-    color: aliceblue;
-    display: flex;
-    flex-direction: column;
-    align-items: center;    /* Centraliza os itens horizontalmente */
-    justify-content: center;
-  }
-  .imagem_texto{
-    width: 50%;
-    height: auto;
-  }
-  
-  .imagem_texto img{
-    width: 100%;
-    border-radius: 50%;
-    transition: 1s;
-    
-  }
+    body {
+        background: #f2f5f7;
+    }
+
+    section.servicos {
+        padding: 50px 10%;
+        background: rgba(6, 37, 66, 0.5);
+        color: white;
+        text-align: center;
+    }
+
+    section.servicos h2 {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+        position: relative;
+    }
+
+    section.servicos h2::after {
+        content: "";
+        width: 80px;
+        height: 4px;
+        background: #ffd700;
+        display: block;
+        margin: 10px auto 0;
+        border-radius: 5px;
+    }
+
+    .servicos-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .card-servico {
+        background: white;
+        color: #062542;
+        flex: 1 1 300px;
+        max-width: 320px;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        text-align: center;
+    }
+
+    .card-servico:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .card-servico img {
+        width: 80px;
+        margin-bottom: 15px;
+    }
+
+    .card-servico h3 {
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+    }
+
+    .card-servico p {
+        font-size: 0.95rem;
+        line-height: 1.4;
+    }
   .formulario {
     max-width: 500px;
     height: 300px;
