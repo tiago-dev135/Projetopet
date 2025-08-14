@@ -919,14 +919,91 @@ colocar o botão de fechar junto formulário*/
     flex-direction: column;
   }
   
-  footer {
-  grid-area: footer;
-    background-color: #bebdbd;
-    width: 100%;
-    padding: 20px;
-    text-align: center;
-    margin-top: 100px;
-  }
+  .pet-footer {
+  background-color: rgba(6, 37, 66, 0.9);
+  color: aliceblue;
+  padding-top: 40px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.footer-logo img {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+.footer-logo p {
+  max-width: 200px;
+  font-size: 14px;
+}
+
+.footer-contato, .footer-links, .footer-social {
+  min-width: 200px;
+}
+
+.footer-contato h3, 
+.footer-links h3, 
+.footer-social h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  border-bottom: 2px solid aliceblue;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.footer-contato p, 
+.footer-links ul, 
+.footer-social a {
+  font-size: 14px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 5px;
+}
+
+.footer-links ul li a {
+  color: aliceblue;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-links ul li a:hover {
+  color: #FFD700; /* dourado no hover */
+}
+
+.footer-social a {
+  color: aliceblue;
+  font-size: 20px;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.footer-social a:hover {
+  color: #FFD700;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 20px;
+  background-color: rgba(6, 37, 66, 1);
+  font-size: 14px;
+}
+
   
   
   @media(max-width:600px){
