@@ -802,8 +802,69 @@ colocar o botão de fechar junto formulário*/
         line-height: 1.4;
     }
     /*fim serviço*/
+    /* Estilo geral da seção */
+.atendimento {
+  background-color: aliceblue;
+  padding: 50px 20px;
+  text-align: center;
+}
 
-    /*Inicio formulário de contato*/
+.atendimento h2 {
+  color: rgba(6, 37, 66, 1);
+  margin-bottom: 10px;
+}
+
+.atendimento p {
+  color: rgba(6, 37, 66, 0.8);
+  margin-bottom: 40px;
+  font-size: 16px;
+}
+
+.atendimento-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Card */
+.atendimento .card {
+  background-color: rgba(6, 37, 66, 0.05);
+  padding: 25px;
+  border-radius: 15px;
+  width: 250px;
+  text-decoration: none;
+  color: rgba(6, 37, 66, 1);
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.atendimento .card:hover {
+  background-color: rgba(6, 37, 66, 0.1);
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Ícones */
+.atendimento .card i {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+/* Cores dos ícones */
+.whatsapp-icon {
+  color: #25D366; /* verde oficial WhatsApp */
+}
+
+.email-icon {
+  color: #EA4335; /* vermelho Google/Gmail */
+}
+
+.phone-icon {
+  color: #007BFF; /* azul telefone */
+}
+
+    /*Inicio seção de contato*/
   .formulario {
     max-width: 500px;
     height: 300px;
