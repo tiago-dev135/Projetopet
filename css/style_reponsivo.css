@@ -830,6 +830,7 @@ colocar o botão de fechar junto formulário*/
 /* Card */
 .atendimento .card {
   background-color: rgba(6, 37, 66, 0.05);
+  height: 200px;
   padding: 25px;
   border-radius: 15px;
   width: 250px;
