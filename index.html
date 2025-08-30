@@ -45,7 +45,7 @@
       <li><a href="#">Serviços</a></li>
       <li><a href="#">Ofertas</a></li>
       <li scroll-behavior="smooth"><a href="#footer">Contato</a></li>
-      <li><a href="index.html"><i class="fa fa-shopping-basket"></i></a></li>
+      <li onclick="abrirCarrinho()"><a><i class="fa fa-shopping-basket" style="cursor: pointer;"></i></a></li>
       <!--Label do formulário-->
       
         <label for="abrir_formulario">
@@ -80,7 +80,65 @@
   </header>
 
 
+<!--Carrinho compra-->
+<div class="carrinho-container" id="carrinho">
+    <!-- Esquerda -->
+    <div class="carrinho-esquerda">
+      <h2>Carrinho de Compras <small>(2 itens)</small></h2>
+      <div class="produtos">
 
+        <div class="produto" data-preco="50">
+          <img src="img/aquadent.jpg" alt="Produto">
+          <div class="produto-info">
+            <h4>Produto 1</h4>
+            <p>Descrição breve do produto</p>
+          </div>
+          <div class="produto-controles">
+            <div class="quantidade">
+              <button onclick="alterarQtd(this, -1)">-</button>
+              <span>1</span>
+              <button onclick="alterarQtd(this, 1)">+</button>
+            </div>
+            <span class="preco">R$ 50,00</span>
+            <span class="remover" onclick="removerProduto(this)">🗑</span>
+          </div>
+        </div>
+
+        <div class="produto" data-preco="80">
+          <img src="img/aurivet.jpg" alt="Produto">
+          <div class="produto-info">
+            <h4>Produto 2</h4>
+            <p>Outra descrição breve</p>
+          </div>
+          <div class="produto-controles">
+            <div class="quantidade">
+              <button onclick="alterarQtd(this, -1)">-</button>
+              <span>2</span>
+              <button onclick="alterarQtd(this, 1)">+</button>
+            </div>
+            <span class="preco">R$ 160,00</span>
+            <span class="remover" onclick="removerProduto(this)">🗑</span>
+          </div>
+        </div>
+
+      </div>
+      <a href="#" class="continuar">⬅ Continuar comprando</a>
+    </div>
+
+    <!-- Direita -->
+    <div class="carrinho-direita">
+      <h3>Confirmar Compra</h3>
+      <button class="btn-fechar-carrinho" onclick="fecharCarrinho()">✖</button>
+
+      <div class="campo-cupom">
+        <input type="text" placeholder="Digite seu cupom">
+        <button>Aplicar</button>
+      </div>
+      <div class="preco-total">Total: <strong id="total">R$ 210,00</strong></div>
+      <button class="confirmar">Confirmar Compra</button>
+    </div>
+  </div>
+<!--Fim carrinho compra-->
 
   
 

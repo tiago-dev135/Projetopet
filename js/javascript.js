@@ -111,3 +111,41 @@ for (let j = 0; j < categoriasVantagens.length; j++) {
 atualizarVantagem(0);
 iniciarLoop();
 
+
+//Inicio Carrinho compra
+const carrinho = document.getElementById('carrinho');
+
+    function abrirCarrinho() {
+      carrinho.classList.add('ativo');
+    }
+
+    function fecharCarrinho() {
+      carrinho.classList.remove('ativo');
+    }
+
+    function atualizarTotal() {
+      let produtos = document.querySelectorAll('.produto');
+      let total = 0;
+      produtos.forEach(prod => {
+        let precoUnit = parseFloat(prod.getAttribute('data-preco'));
+        let qtd = parseInt(prod.querySelector('.quantidade span').innerText);
+        total += precoUnit * qtd;
+        prod.querySelector('.preco').innerText = "R$ " + (precoUnit * qtd).toFixed(2);
+      });
+      document.getElementById('total').innerText = "R$ " + total.toFixed(2);
+    }
+
+    function alterarQtd(btn, valor) {
+      let span = btn.parentElement.querySelector('span');
+      let qtd = parseInt(span.innerText) + valor;
+      if (qtd < 1) qtd = 1;
+      span.innerText = qtd;
+      atualizarTotal();
+    }
+
+    function removerProduto(btn) {
+      btn.closest('.produto').remove();
+      atualizarTotal();
+    }
+
+    atualizarTotal();
